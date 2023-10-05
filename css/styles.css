@@ -128,7 +128,9 @@ label {
 .splash-container {
     background-image: url(../img/fondo_prog-min.jpeg);
     background-repeat: no-repeat;
-    background-size: auto;
+    background-size: cover;
+    /* transition: background-image 6s ease-in-out; */
+    animation: changeBackground 16s infinite;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -137,6 +139,16 @@ label {
     top: 0;
     left: 0;
     position: fixed !important;
+}
+
+@keyframes changeBackground {
+    0% { background-image: url('../img/fondo_prog-min.jpeg'); 
+        background-position: left center;}
+    33.33% { background-image: url('../img/especialidad_1.jpg'); 
+        background-position: center center;}
+    66.66% { background-image: url('../img/especialidad_3.jpg');
+        background-position: right center }
+    100% { background-image: url('../img/fondo_prog-min.jpeg'); } /* Vuelve a la primera imagen */
 }
 
 .splash {
