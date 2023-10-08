@@ -143,11 +143,11 @@ label {
 
 @keyframes changeBackground {
     0% { background-image: url('../img/fondo_prog-min.jpeg'); 
-        background-position: left center;}
+        background-position: center center;}
     33.33% { background-image: url('../img/especialidad_1.jpg'); 
         background-position: center center;}
     66.66% { background-image: url('../img/especialidad_3.jpg');
-        background-position: right center }
+        background-position: center center }
     100% { background-image: url('../img/fondo_prog-min.jpeg'); } /* Vuelve a la primera imagen */
 }
 
